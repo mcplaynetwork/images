@@ -12,6 +12,8 @@ printf "\033[1m\033[33mcontainer@mcplaynetwork~ \033[0mjava -version\n"
 java -version
 
 if [ -d .git ]; then
+git config user.email "${GIT_EMAIL}"
+git config user.name "${GIT_NAME}"
 printf "\033[1m\033[33mcontainer@mcplaynetwork~ \033[0m.git directory exists\n"
 printf "\033[1m\033[33mcontainer@mcplaynetwork~ \033[0mUpdate git upstream\n"
 git add .
