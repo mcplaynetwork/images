@@ -12,8 +12,8 @@ printf "\033[1m\033[33mcontainer@mcplaynetwork~ \033[0mjava -version\n"
 java -version
 
 if [ -d .git ]; then
-printf "\033[1m\033[33mcontainer@mcplaynetwork~ \033[0mG.git directory exists\n"
-printf "\033[1m\033[33mcontainer@mcplaynetwork~ \033[0mGUpdate git upstream\n"
+printf "\033[1m\033[33mcontainer@mcplaynetwork~ \033[0m.git directory exists\n"
+printf "\033[1m\033[33mcontainer@mcplaynetwork~ \033[0mUpdate git upstream\n"
 git add .
 git commit -m "Upstream update" -m "`git diff --name-only --staged`" -m "Generated on `date +'%Y-%m-%d %H:%M:%S'`"
 git push
